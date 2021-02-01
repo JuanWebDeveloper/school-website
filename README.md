@@ -1,0 +1,2 @@
+# school-website
+This practice is a web page of a school in which information such as its description and objectives, the services that the institution provides, information from the officials of the institution, their social networks and a form to contact them is displayed, I remember that this It is the first website that I made adaptable for all devices on my own and that is why I have a certain affection for this practice.
