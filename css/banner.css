@@ -1,0 +1,120 @@
+/*--=====================================================
+|-Estilos Del Banner                                     |
+=======================================================--*/
+.contImg{
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.contImg figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: slide 25s infinite;
+}
+
+.contImg figure img{
+    width: 25%;
+    float: left;
+    height: 350px;
+    border-radius: 0px 50px 50px 50px;
+}
+
+#btnBanner{
+    width:150px;
+    height: 40px;
+	border:0px;
+	font-size:25px;
+    padding:2px;
+    background: #3b5998;
+    color: #e9e9e9;
+}
+
+
+/*--=====================================================
+|-Movimiento Slide                                      |
+=======================================================--*/
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: 0%;
+    }
+
+}
+
+/*--====================
+|-Diseño Responsive Slide|
+=====================--*/
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .contImg figure img{
+        height: 220px;
+    }
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .contImg figure img{
+        height: 220px;
+    }
+
+    .contImg{
+        position: relative;
+        top: 160px;
+    }
+    #btnBanner{
+        position: relative;
+        top: 160px;
+    }
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .contImg figure img{
+        height: 200px;
+
+    }
+
+    .contImg{
+        position: relative;
+        top: 160px;
+    }
+    #btnBanner{
+        position: relative;
+        top: 165px;
+        height: 40px;
+        width: 100px;
+    }
+}

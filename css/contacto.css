@@ -1,0 +1,195 @@
+/*--=====================================================
+|-Estilo Contacto                                         |
+=======================================================--*/
+.containerForm{
+    width: 110%;
+    position: relative;
+    right: 50px;
+    top: 80px;
+    padding: 40px 0;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+}
+
+.formText{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 0;
+    background: rgba(150, 150, 150, 0.500);
+    padding: 20px 40px;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 5px solid #3b5998;
+    color: #444;
+    transition: .5s all ease-in-out;
+}
+
+.formText:focus{
+    box-shadow:  0 0 2px 4px #3b5998;
+    border-bottom: 0;
+}
+
+
+textarea.formText{
+    resize: none;
+    height: 120px;
+}
+
+.formBtn{
+    float: right;
+    border: 0;
+    background: #3b5998;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.formBtn:hover{
+    background: #2980b9;
+}
+
+
+/*--=====================================================
+|-Estilos Footer                                         |
+=======================================================--*/
+#footerArea{
+    width: 110%;
+    position: relative;
+    right: 50px;
+    top: 80px;
+    padding: 70px 0 60px 0;
+    border-top: 10px solid #fff;
+    background: rgba(59, 88, 152, 0.800);
+    color: #fff;
+    text-align: left;
+}
+
+.footerSocial{
+    margin-top: 20px;
+}
+
+.singleFooter h3{
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #fafafa;
+}
+
+.linkArea li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+}
+
+.linkArea li a{
+    text-transform: capitalize;
+    color: #ddd;
+}
+
+.linkArea li a i{
+    margin-right: 10px;
+    color: #ddd;
+}
+
+.linkArea{
+    padding: 0;
+}
+
+.footerSocial li {
+    background: #999;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.footerSocial li:hover{
+    opacity: 0.7;
+}
+
+.footerSocial li a i{
+    color: #fff;
+    padding: 8px 0;
+}
+
+.widget li{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+.widget li a img{
+    margin-bottom: -10px;
+    width: 100%;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.widget li a img:hover{
+    transition: .3s all ease;
+    opacity: 8;
+    transform: scale(1.1, 1.1);
+}
+
+.copyright{
+    background: rgba(153, 153, 153, 0.5);
+    padding: 30px 0;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.copyright p{
+    font-size: 19px;
+    font-weight: 600;
+    color: #fafafa;
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .contact-form{
+        top: 0px;
+    }
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .contact-form{
+        top: 0px;
+    }
+
+    .footerSocial li {
+        width: 30px;
+    }
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .containerForm{
+        width: 110%;
+        right: 13px;
+    }
+
+    .contact-form{
+        top: 0px;
+    }
+
+    #footerArea{
+        right: 13px;
+    }
+}

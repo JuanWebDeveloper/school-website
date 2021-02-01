@@ -1,0 +1,177 @@
+/*--=====================================================
+|-Estilos Comunidad Educativa                            |
+=======================================================--*/
+.contComunidad{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.contComunidad h1{
+    display: inline-block;
+    font-size: 70px;
+    color: #3b5998;
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 4px solid #fff;
+    margin-bottom: 80px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px !important;
+    height: 380px;
+}
+
+.swiper-slide .imgC{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.swiper-slide .imgC img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .descripcionC{
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.swiper-slide .descripcionC h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #444;
+    text-align: center;
+}
+
+.swiper-slide .descripcionC h3 span{
+    color: #3b5998;
+}
+
+/*--====================
+|-Diseño De La Frase|
+=====================--*/
+.contFrase{
+    width: 106%;
+    margin-top: 120px;
+    position: relative;
+    right: 5%;
+    height: 200px;
+    text-align: center;
+    background: rgba(59, 88, 152, 0.719);
+}
+
+.contFrase h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #e9e9e9;
+    margin-top: 40px;
+    border-bottom: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #e9e9e9;
+}
+/*--====================
+|-Diseño Responive     |
+=====================--*/
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+    .contComunidad h1{
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide .imgC{
+        height: 300px;
+    }
+
+    .swiper-slide .descripcionC h3{
+        margin-bottom: 60px;
+    }
+
+    .swiper-slide .descripcionC .contactar{
+        padding: 10px 45px;
+        bottom: 40px;
+    }
+    .contFrase{
+       right: 4.5%;
+    }
+}
+
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .contComunidad{
+        margin-top: 50px;
+    }
+    .contComunidad h1{
+        margin-bottom: 40px;
+    }
+    .swiper-slide .descripcionC h3{
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide .imgC{
+        height: 300px;
+    }
+    .contFrase{
+        width: 107%;
+    }
+    .contFrase h1{
+        font-size: 70px;
+        letter-spacing: 2px;
+        color: #e9e9e9;
+        margin-top: 60px;
+    }
+}
+
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .contComunidad{
+        margin-top: 50px;
+    }
+    .contComunidad h1{
+        margin-bottom: 40px;
+        font-size: 35px;
+    }
+    
+    .swiper-slide .imgC{
+        height: 250px;
+    }
+
+    .swiper-slide .descripcionC h3{
+        margin-bottom: 40px;
+        font-size: 17px;
+    }
+
+    .contFrase{
+        width: 110%;
+        margin-top: 100px;
+        height: 100px;
+    }
+    
+    .contFrase h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: #e9e9e9;
+        margin-top: 30px;
+    }
+}

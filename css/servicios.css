@@ -1,0 +1,103 @@
+/*--=====================================================
+|-Estilos De Servicios                                         |
+=======================================================--*/
+.contServicios{
+    margin-top: 120px;
+}
+
+.containerS{
+    text-align: center;
+}
+
+.containerS h1{
+    display: inline-block;
+    text-transform: capitalize;
+    border-bottom: 4px solid #fff;
+    font-size: 70px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: #3b5998;
+}
+
+.servicios{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.serviciosC{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.serviciosC:hover{
+    background: #fff;
+    position: relative;
+    top: 10px;
+}
+
+.serviciosC i{
+    color: #3b5998;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.serviciosC h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0;
+    color: #3b5998;
+}
+
+.serviciosC p{
+    color: #444;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 15px;
+    text-align: left;
+}
+
+/*--=======================
+|-Diseño Responsive Servicios|
+========================--*/
+
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+    .serviciosC{
+        width: 33%;
+    }
+    .serviciosC p{
+        font-size: 17px;
+    }
+
+
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media (max-width:767px){
+    .contServicios{
+        margin-top: 50px;
+    }
+    .serviciosC{
+        width: 100%;
+    }
+
+    .serviciosC p{
+        font-size: 17px;
+    }
+    .containerS h1{
+        font-size: 40px;
+    }
+}

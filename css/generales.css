@@ -1,0 +1,53 @@
+/*--=====================================================
+|-Estilos Globales                                       |
+=======================================================--*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ul, ol{
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: rgba(150, 150, 150, 0.500) !important;
+
+
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection{
+    background: transparent;
+    color: #1c9dda;
+}
+
+p::selection{
+    background: transparent;
+    color: #2d1dddbc;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+   list-style: none;
+   text-decoration: none;
+}
+a::selection{
+    background: transparent;
+    color: #1c9dda;
+}
+
+
+span::selection{
+    background: transparent;
+    color: #2d1dddbc;
+}
